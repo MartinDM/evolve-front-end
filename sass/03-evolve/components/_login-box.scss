@@ -1,0 +1,49 @@
+// Styles for login page
+
+.login-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form-group input {
+  padding: .6rem 1.2rem;
+  border: 1px solid #d2d6de;
+  border-radius: 0;
+  height: 34px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  background-color: #f9f9f9;
+  -webkit-appearance: none;
+}
+
+.login-button {
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+  color: white;
+  background-color: #C0C0C0;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.forgotPassword {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.forgotPassword a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.3rem;
+  opacity: .7;
+}
+
+.forgotPassword a:hover {
+  text-decoration: underline;
+}

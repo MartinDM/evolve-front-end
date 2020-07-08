@@ -1,0 +1,16 @@
+/*
+Sass structure following the ITCSS convention
+https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+*/
+
+/* Settings 
+    Fonts, SASS variables, vendor libs
+    Inc. Breakpoint definitions
+ */
+@import '01-settings/settings';
+
+// Overrides for specific Bootstrap components
+@import '02-extensions/extensions';
+
+// Evolve-specific Components
+@import '03-evolve/evolve';

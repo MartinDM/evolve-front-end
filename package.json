@@ -1,0 +1,25 @@
+{
+  "name": "evolve-live-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server",
+    "sass:watch": "node-sass sass/main.scss css/evolve.css -w",
+    "sass": "node-sass sass/main.scss css/evolve.css",
+    "dev": "npm run sass && concurrently \"npm run serve\" \"npm run sass:watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "admin-lte": "^3.0.5",
+    "live-server": "^1.2.1"
+  }
+}

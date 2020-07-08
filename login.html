@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache"/>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport"
+        content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Velocity Login</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="css/evolve.css" type="text/css">
+
+</head>
+
+<body class="skin-blue" data-tenant="novartis">
+    <body class="" data-tenant="novartis">
+    <div id="splashPage">
+
+      <div class="pageSplash">
+          <div class="center">
+              <i class="fa fa-spinner spinner"></i>
+              <p class="pageSplashMessage">
+                  loading...
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="login-view">
+      <div id="session-expired-alert" class="alertBanner">
+          <span id="session-expired-message" class="alertBannerContent"></span>
+      </div>
+      <header>
+          <div class="image-container">
+              <img id="logo" src="img/logo.svg" />
+          </div>
+      </header>
+      <main> 
+          <div class="login-panel">
+              <form id="form" method="POST">
+                  <fieldset>
+                      <p id="appTitle" class="logo-tagline-text"></p>
+                      <input id="client-id" type="hidden" name="client_id" required="true" readonly="true" />
+                      <p id="errorMessage"></p>
+                      <div class="login-form-group">
+                          <label for="username" class="sr-only">Username</label>
+                          <input type="text" name="username" placeholder="Username" required="true" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" />
+                      </div>
+                      <div class="login-form-group">
+                          <label for="password" class="sr-only">Password</label>
+                          <input type="password" name="password" placeholder="Password" required="true" />
+                      </div>
+                      <a type="submit" href="index.html" class="btn btn-primary login-button" id="login-btn">Log In</a>
+                  </fieldset>
+              </form>
+          </div>
+          <div class="forgotPassword">
+              <p><a href="/webapp/password_resets" class="">I forgot my password</a></p>
+          </div>
+      </main>
+  </div>
+  <script src="js/evolve.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
