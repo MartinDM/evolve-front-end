@@ -1116,21 +1116,7 @@ pre {
   font-size: 90%;
   color: #6c757d; }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%;
-  font-weight: 300; }
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5; }
-
+/* Evolve-specific components */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1311,7 +1297,6 @@ body {
   .image-container {
     padding: 8rem 0 5rem 0; } }
 
-/* Evolve-specific components */
 .button {
   color: #fff;
   padding: 5px 15px;
@@ -1319,6 +1304,9 @@ body {
   border: 0;
   border-radius: 4px;
   transition: background-color .5s; }
+
+.legacy {
+  border: 1px; }
 
 .primary {
   background-color: #2aa6e1; }
@@ -8745,4 +8733,27 @@ div[adf-widget-type="patient.tasks"] li:hover {
   text-decoration: underline; }
 
 .main-header {
-  background: red; }
+  background: #0090d7;
+  color: white;
+  height: 50px; }
+  .main-header .nav-link {
+    color: white; }
+
+.brand-link {
+  background: #00b7ff;
+  display: block;
+  max-height: 50px;
+  padding: 0 6px; }
+  .brand-link__icon {
+    display: none; }
+  .brand-link__logo {
+    max-width: 100%; }
+
+.sidebar-collapse .brand-link__logo {
+  display: none; }
+
+.sidebar-collapse .brand-link__icon {
+  display: block; }
+
+.sidebar-collapse .brand-text {
+  display: block; }

@@ -1,4 +1,36 @@
 $blue: #0090d7;
+$nav-height: 50px;
+
 .main-header {
-  background: #0090d7;
+  background: $blue;
+  color: white;
+  height: $nav-height;
+  .nav-link {
+    color: white;
+  }
 }
+
+.brand-link {
+  background: #00b7ff;
+  display: block;
+  max-height: $nav-height;
+  padding: 0 6px;
+  &__icon {
+    display: none;
+  }
+  &__logo {
+    max-width: 100%;
+  }
+}
+
+.sidebar-collapse {
+  .brand-link__logo { display: none; }
+  .brand-link__icon { display: block; }
+}
+
+.sidebar-collapse {
+  .brand-text {
+    display: block;
+  }
+}
+
