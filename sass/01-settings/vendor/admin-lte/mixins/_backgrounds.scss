@@ -31,6 +31,8 @@
 }
 
 // Background Gradient Variant
+// Removing as deprecated and not used
+/* 
 @mixin background-gradient-variant($name, $color) {
   .bg-gradient-#{$name} {
     @include bg-gradient-variant('&', $color);
@@ -61,4 +63,4 @@
       }
     }
   }
-}
+} */

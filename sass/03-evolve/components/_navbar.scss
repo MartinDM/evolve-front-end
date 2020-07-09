@@ -8,7 +8,22 @@ $nav-height: 50px;
   .nav-link {
     color: white;
   }
+  input[type="search"].form-control-navbar {
+    background: transparent;
+    &::placeholder {
+      color: white;
+    }
+  }
 }
+
+.brand-text {
+  transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease;
+}
+
+.btn-navbar {
+  color: white;
+}
+ 
 
 .brand-link {
   background: #00b7ff;
@@ -24,13 +39,8 @@ $nav-height: 50px;
 }
 
 .sidebar-collapse {
+  .brand-text { display: none; }
   .brand-link__logo { display: none; }
   .brand-link__icon { display: block; }
-}
-
-.sidebar-collapse {
-  .brand-text {
-    display: block;
-  }
 }
 

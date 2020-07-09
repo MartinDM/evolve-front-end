@@ -8738,6 +8738,16 @@ div[adf-widget-type="patient.tasks"] li:hover {
   height: 50px; }
   .main-header .nav-link {
     color: white; }
+  .main-header input[type="search"].form-control-navbar {
+    background: transparent; }
+    .main-header input[type="search"].form-control-navbar::placeholder {
+      color: white; }
+
+.brand-text {
+  transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; }
+
+.btn-navbar {
+  color: white; }
 
 .brand-link {
   background: #00b7ff;
@@ -8749,11 +8759,11 @@ div[adf-widget-type="patient.tasks"] li:hover {
   .brand-link__logo {
     max-width: 100%; }
 
+.sidebar-collapse .brand-text {
+  display: none; }
+
 .sidebar-collapse .brand-link__logo {
   display: none; }
 
 .sidebar-collapse .brand-link__icon {
-  display: block; }
-
-.sidebar-collapse .brand-text {
   display: block; }
